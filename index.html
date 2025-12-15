@@ -1,55 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Name | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybersecurity portfolio showcasing offensive and defensive security expertise">
+    <meta name="keywords" content="Cybersecurity, SOC, Offensive Security, Defensive Security, BCA, Internship">
+    <meta name="author" content="Your Name">
+    
+    <title>Your Name | Cybersecurity Specialist Portfolio</title>
+    
+    <!-- Favicon (add your own favicon.ico to root folder) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Security-focused CSP meta tag (optional but recommended) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
 </head>
+
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header role="banner" class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">Your Name</h1>
+            <p class="tagline">Cybersecurity Intern | Offensive & Defensive Security | BCA Final Year</p>
+        </div>
+    </header>
 
-<header>
-  <h1>Your Name</h1>
-  <p>Cybersecurity Intern | Offensive & Defensive Security | BCA Final Year</p>
-</header>
+    <main id="main-content" role="main">
+        <section class="section about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <p>
+                    BCA final-year student with hands-on experience in offensive and defensive 
+                    cybersecurity. I specialize in real-world attack simulations, detection, 
+                    and mitigation strategies. Currently seeking cybersecurity internship 
+                    opportunities to apply and expand my skills in a professional environment.
+                </p>
+            </div>
+        </section>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    BCA final-year student with hands-on experience in offensive and defensive
-    cybersecurity. I focus on real-world attack simulations, detection, and
-    mitigation. Actively seeking cybersecurity internship opportunities.
-  </p>
-</section>
+        <section class="section focus-section" aria-labelledby="focus-heading">
+            <div class="container">
+                <h2 id="focus-heading">Core Focus Areas</h2>
+                <ul class="focus-list">
+                    <li class="focus-item">
+                        <strong>Offensive Security</strong> – Web Application & Linux Security
+                    </li>
+                    <li class="focus-item">
+                        <strong>Defensive Security</strong> – SOC Operations & Threat Detection
+                    </li>
+                    <li class="focus-item">
+                        <strong>Infrastructure</strong> – Networking & Cloud Security Fundamentals
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<section>
-  <h2>Core Focus</h2>
-  <ul>
-    <li>Offensive Security (Web, Linux)</li>
-    <li>Defensive Security & SOC</li>
-    <li>Networking & Cloud Basics</li>
-  </ul>
-</section>
+        <section class="section projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Flagship Projects</h2>
+                <div class="coming-soon">
+                    <p>Projects portfolio currently being updated. Check back soon!</p>
+                    <p class="small-note">(New projects will be added this week)</p>
+                </div>
+            </div>
+        </section>
 
-<section>
-  <h2>Flagship Projects</h2>
-  <p>Projects will be added this week.</p>
-</section>
+        <section class="section certifications-section" aria-labelledby="certifications-heading">
+            <div class="container">
+                <h2 id="certifications-heading">Certifications</h2>
+                <ul class="cert-list">
+                    <li class="cert-item">CEH Master (Certified Ethical Hacker)</li>
+                    <li class="cert-item">Advanced Diploma in Cyber Defense</li>
+                </ul>
+            </div>
+        </section>
 
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>CEH Master</li>
-    <li>Advanced Diploma in Cyber Defense</li>
-  </ul>
-</section>
+        <section class="section contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Contact & Profiles</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub:</span>
+                        <a href="https://github.com/YOURUSERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="contact-link">
+                            github.com/YOURUSERNAME
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn:</span>
+                        <span class="contact-coming-soon">Profile link coming soon</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            your.email@example.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section>
-  <h2>Contact</h2>
-  <p>
-    GitHub: https://github.com/YOURUSERNAME<br>
-    LinkedIn: (add later)
-  </p>
-</section>
+    <footer role="contentinfo" class="site-footer">
+        <div class="container">
+            <p class="copyright">
+                &copy; <span id="current-year">2024</span> Your Name. All rights reserved.
+            </p>
+            <p class="footer-note">
+                Last updated: <time datetime="2024-01-01">January 2024</time>
+            </p>
+        </div>
+    </footer>
 
+    <!-- JavaScript for dynamic year (optional) -->
+    <script>
+        // Set current year in copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Security: Prevent opening links in iframes (clickjacking protection)
+        if (self !== top) {
+            top.location = self.location;
+        }
+    </script>
 </body>
 </html>
