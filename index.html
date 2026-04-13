@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIHADH P A | CYBER_RECON_OFFICE</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="p-4 md:p-8">
@@ -16,45 +14,37 @@
         <i class="fas fa-palette mr-2"></i> CRYPT_THEME.sh
     </button>
 
-    <nav class="max-w-6xl mx-auto flex justify-between items-center mb-12 border-b pb-4 border-dim">
-        <div class="text-xl font-bold tracking-tighter uppercase">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center mb-12 border-b pb-4" style="border-color: var(--border)">
+        <div class="text-xl font-bold tracking-tighter uppercase cursor-pointer" onclick="adminLogin()">
             <span class="accent-text">></span> NIHADH_P_A_<span class="opacity-50">PORTFOLIO</span>
         </div>
         <div class="hidden md:flex space-x-8 text-[10px] font-bold tracking-widest opacity-70">
-            <a href="#about" class="nav-link">01_PROFILE</a>
-            <a href="#projects" class="nav-link">02_ENGAGEMENTS</a>
-            <a href="#logs" class="nav-link">03_STREAM</a>
-            <a href="#contact" class="nav-link">04_CONNECT</a>
+            <a href="#about" class="hover:accent-text transition">01_PROFILE</a>
+            <a href="#projects" class="hover:accent-text transition">02_ENGAGEMENTS</a>
+            <a href="#logs" class="hover:accent-text transition">03_STREAM</a>
+            <a href="#contact" class="hover:accent-text transition">04_CONNECT</a>
         </div>
-        <button class="md:hidden" onclick="toggleMenu()"><i class="fas fa-terminal text-xl"></i></button>
     </nav>
-
-    <div id="mobileMenu" class="mobile-links flex-col gap-6 mb-10 p-8 terminal-card md:hidden uppercase text-xs font-bold tracking-widest">
-        <a href="#about" onclick="toggleMenu()">01_PROFILE</a>
-        <a href="#projects" onclick="toggleMenu()">02_ENGAGEMENTS</a>
-        <a href="#logs" onclick="toggleMenu()">03_STREAM</a>
-        <a href="#contact" onclick="toggleMenu()">04_CONNECT</a>
-    </div>
 
     <header id="about" class="max-w-6xl mx-auto mb-24">
         <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1">
                 <div class="mb-4 flex items-center gap-2">
                     <span class="status-dot"></span>
-                    <span class="text-xs font-bold uppercase tracking-wider text-ready">Available for SOC Tier 1 & Cybersecurity roles</span>
+                    <span class="text-xs font-bold uppercase tracking-wider" style="color: #22c55e">Available for SOC Tier 1 & Cybersecurity roles</span>
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Cybersecurity <span class="accent-text italic">Analyst</span></h1>
                 <p class="opacity-70 text-lg max-w-2xl mb-8 leading-relaxed">
-                    BCA Graduate & <span class="font-bold underline decoration-2 accent-underline">CEH Master</span>. A versatile security professional bridging the gap between <span class="text-white">Offensive Assessment</span> and <span class="text-white">Defensive Operations</span>. Ready for immediate joining and relocation.
+                    BCA Graduate & <span class="font-bold underline decoration-2" style="text-decoration-color: var(--accent)">CEH Master</span>. A versatile security professional bridging the gap between <span class="text-white">Offensive Assessment</span> and <span class="text-white">Defensive Operations</span>. Ready for immediate joining and relocation.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#contact" class="btn-primary">INITIATE_SIGNAL</a>
-                    <a href="https://github.com/nihadhpa" target="_blank" class="btn-outline">GITHUB_VAULT</a>
+                    <a href="#contact" class="px-8 py-3 rounded-sm font-bold transition text-xs tracking-widest text-white" style="background: var(--accent)">INITIATE_SIGNAL</a>
+                    <a href="https://github.com/All0w0ll" target="_blank" class="border px-8 py-3 rounded-sm font-bold transition text-xs tracking-widest" style="border-color: var(--border)">GITHUB_VAULT</a>
                 </div>
             </div>
             
             <div class="terminal-card p-8 rounded-lg w-full md:w-96 shadow-2xl">
-                <div class="flex gap-2 mb-6 border-b pb-4 border-dim">
+                <div class="flex gap-2 mb-6 border-b pb-4" style="border-color: var(--border)">
                     <div class="w-3 h-3 rounded-full bg-red-500"></div>
                     <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div class="w-3 h-3 rounded-full bg-green-500"></div>
@@ -63,9 +53,9 @@
                     <p><span class="accent-text">$ whoami</span></p>
                     <p class="pl-2">NIHADH_P_A // SEC_RESEARCHER</p>
                     <p><span class="accent-text">$ domain --focus</span></p>
-                    <p class="pl-2 opacity-50">• SOC Operations & SIEM</p>
-                    <p class="pl-2 opacity-50">• Vulnerability Management</p>
-                    <p class="pl-2 opacity-50">• Offensive Security (CEH)</p>
+                    <p class="pl-2 text-dim">• SOC Operations & SIEM</p>
+                    <p class="pl-2 text-dim">• Vulnerability Management</p>
+                    <p class="pl-2 text-dim">• Offensive Security (CEH)</p>
                     <p><span class="accent-text">$ certs --verify</span></p>
                     <p class="pl-2 text-green-500">CEH_MASTER_AUTHENTICATED</p>
                 </div>
@@ -74,46 +64,50 @@
     </header>
 
     <section id="projects" class="max-w-6xl mx-auto mb-24">
-        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter accent-border">Technical_Engagement_Reports</h2>
+        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter" style="border-color: var(--accent)">Technical_Engagement_Reports</h2>
         <div class="grid md:grid-cols-2 gap-6">
             <div class="terminal-card p-6 rounded-lg">
                 <div class="flex justify-between items-start mb-2">
                     <h3 class="font-bold text-lg accent-text">SIEM Monitoring & Detection</h3>
-                    <span class="text-[8px] border px-2 py-0.5 opacity-50 border-dim">DEFENSIVE</span>
+                    <span class="text-[8px] border px-2 py-0.5 opacity-50">DEFENSIVE</span>
                 </div>
                 <p class="opacity-60 text-sm mb-4 leading-relaxed">Configured Splunk dashboards to detect authentication anomalies and lateral movement patterns. Integrated YARA rules for automated file analysis.</p>
                 <div class="flex gap-2">
-                    <span class="tag">#Splunk</span>
-                    <span class="tag">#BlueTeam</span>
+                    <span class="text-[9px] border px-2 py-1 opacity-50 uppercase" style="border-color: var(--border)">#Splunk</span>
+                    <span class="text-[9px] border px-2 py-1 opacity-50 uppercase" style="border-color: var(--border)">#BlueTeam</span>
                 </div>
             </div>
             <div class="terminal-card p-6 rounded-lg">
                 <div class="flex justify-between items-start mb-2">
                     <h3 class="font-bold text-lg accent-text">Vulnerability Assessment</h3>
-                    <span class="text-[8px] border px-2 py-0.5 opacity-50 border-dim">OFFENSIVE</span>
+                    <span class="text-[8px] border px-2 py-0.5 opacity-50">OFFENSIVE</span>
                 </div>
                 <p class="opacity-60 text-sm mb-4 leading-relaxed">Identified and documented critical flaws in web applications using CEH Master methodologies, focusing on injection points and privilege escalation.</p>
                 <div class="flex gap-2">
-                    <span class="tag">#Pentesting</span>
-                    <span class="tag">#CEH_Master</span>
+                    <span class="text-[9px] border px-2 py-1 opacity-50 uppercase" style="border-color: var(--border)">#Pentesting</span>
+                    <span class="text-[9px] border px-2 py-1 opacity-50 uppercase" style="border-color: var(--border)">#CEH_Master</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="logs" class="max-w-6xl mx-auto mb-24">
-        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter accent-border">Activity_Log_Stream</h2>
-        <div class="terminal-card p-6 rounded-lg mb-6">
-            <div class="grid md:grid-cols-4 gap-4">
-                <input type="text" id="logTitle" placeholder="NODE_ID (Lab/Target)" class="log-input">
-                <input type="text" id="logDesc" placeholder="ACTION_SUMMARY" class="md:col-span-2 log-input">
-                <button onclick="addLog()" class="btn-append">Append_Log</button>
+        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter" style="border-color: var(--accent)">Activity_Log_Stream</h2>
+        
+        <div id="adminZone" class="hidden mb-6">
+            <div class="terminal-card p-6 rounded-lg border-dashed border-2" style="border-color: var(--accent)">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <input type="text" id="logTitle" placeholder="NODE_ID (Lab/Target)" class="p-3 text-xs outline-none">
+                    <input type="text" id="logDesc" placeholder="ACTION_SUMMARY" class="md:col-span-2 p-3 text-xs outline-none">
+                    <button onclick="addLog()" class="text-white font-bold py-3 text-[10px] tracking-widest uppercase transition" style="background: var(--accent)">Append_Log</button>
+                </div>
             </div>
         </div>
+
         <div id="logsContainer" class="space-y-3"></div>
     </section>
 
-    <section id="contact" class="max-w-6xl mx-auto mb-24 pt-16 border-t border-dim">
+    <section id="contact" class="max-w-6xl mx-auto mb-24 pt-16 border-t" style="border-color: var(--border)">
         <div class="grid md:grid-cols-2 gap-16">
             <div>
                 <h2 class="text-4xl font-bold mb-6 italic">Let's Secure Something Together</h2>
@@ -128,17 +122,18 @@
             </div>
             <div class="terminal-card p-8 rounded-lg">
                 <form action="https://formspree.io/f/mdayonwz" method="POST" class="space-y-4">
-                    <input type="text" name="name" placeholder="IDENT_NAME" required class="log-input w-full">
-                    <input type="email" name="email" placeholder="AUTH_EMAIL" required class="log-input w-full">
-                    <textarea name="message" rows="4" placeholder="TRANSMISSION_PAYLOAD" required class="log-input w-full"></textarea>
-                    <button type="submit" class="btn-primary w-full py-4 uppercase">TRANSMIT_SIGNAL</button>
+                    <input type="text" name="name" placeholder="IDENT_NAME" required class="w-full p-4 text-xs outline-none">
+                    <input type="email" name="email" placeholder="AUTH_EMAIL" required class="w-full p-4 text-xs outline-none">
+                    <textarea name="message" rows="4" placeholder="TRANSMISSION_PAYLOAD" required class="w-full p-4 text-xs outline-none"></textarea>
+                    <input type="hidden" name="_next" value="https://all0w0ll.github.io/All0w0ll/">
+                    <button type="submit" class="w-full font-bold py-4 text-[10px] tracking-[0.3em] uppercase transition text-white" style="background: var(--accent)">TRANSMIT_SIGNAL</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer class="max-w-6xl mx-auto text-center py-12 border-t border-dim">
-        <p class="opacity-30 text-[10px] tracking-[0.5em] font-bold uppercase">Nihadh P A // Secure_Ops // 2026</p>
+    <footer class="max-w-6xl mx-auto text-center py-12 border-t" style="border-color: var(--border)">
+        <p class="opacity-30 text-[10px] tracking-[0.5em] font-bold uppercase cursor-help" onclick="adminLogin()">Nihadh P A // Secure_Ops // 2026</p>
     </footer>
 
     <script src="script.js"></script>
