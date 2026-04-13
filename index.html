@@ -1,303 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="blue">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cybersecurity & Full Stack Developer portfolio with expertise in offensive/defensive security and modern web development.">
-    <meta name="keywords" content="cybersecurity, full stack developer, SOC, offensive security, defensive security, web development, BCA">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Your Name | Cybersecurity & Full Stack Developer">
-    <meta property="og:description" content="Professional portfolio showcasing cybersecurity and full stack development expertise.">
-    <meta property="og:type" content="website">
+    <title>NIHADH P A | CYBER_RECON_OFFICE</title>
     
-    <title>Your Name | Cybersecurity & Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="preload" href="style.css" as="style">
 </head>
+<body class="p-4 md:p-8">
 
-<body>
-    <!-- Navigation accessibility skip -->
-    <a class="skip-to-content" href="#main-content">Skip to main content</a>
-    
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="name-title">Your Name</h1>
-                <p class="professional-tag">Cybersecurity Specialist & Full Stack Developer</p>
-                <div class="status-indicator">
+    <button class="theme-toggle" onclick="cycleTheme()">
+        <i class="fas fa-palette mr-2"></i> CRYPT_THEME.sh
+    </button>
+
+    <nav class="max-w-6xl mx-auto flex justify-between items-center mb-12 border-b pb-4 border-dim">
+        <div class="text-xl font-bold tracking-tighter uppercase">
+            <span class="accent-text">></span> NIHADH_P_A_<span class="opacity-50">PORTFOLIO</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-[10px] font-bold tracking-widest opacity-70">
+            <a href="#about" class="nav-link">01_PROFILE</a>
+            <a href="#projects" class="nav-link">02_ENGAGEMENTS</a>
+            <a href="#logs" class="nav-link">03_STREAM</a>
+            <a href="#contact" class="nav-link">04_CONNECT</a>
+        </div>
+        <button class="md:hidden" onclick="toggleMenu()"><i class="fas fa-terminal text-xl"></i></button>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-links flex-col gap-6 mb-10 p-8 terminal-card md:hidden uppercase text-xs font-bold tracking-widest">
+        <a href="#about" onclick="toggleMenu()">01_PROFILE</a>
+        <a href="#projects" onclick="toggleMenu()">02_ENGAGEMENTS</a>
+        <a href="#logs" onclick="toggleMenu()">03_STREAM</a>
+        <a href="#contact" onclick="toggleMenu()">04_CONNECT</a>
+    </div>
+
+    <header id="about" class="max-w-6xl mx-auto mb-24">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <div class="mb-4 flex items-center gap-2">
                     <span class="status-dot"></span>
-                    <span class="status-text">BCA Final Year | Seeking Internship</span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-ready">Available for SOC Tier 1 & Cybersecurity roles</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Cybersecurity <span class="accent-text italic">Analyst</span></h1>
+                <p class="opacity-70 text-lg max-w-2xl mb-8 leading-relaxed">
+                    BCA Graduate & <span class="font-bold underline decoration-2 accent-underline">CEH Master</span>. A versatile security professional bridging the gap between <span class="text-white">Offensive Assessment</span> and <span class="text-white">Defensive Operations</span>. Ready for immediate joining and relocation.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#contact" class="btn-primary">INITIATE_SIGNAL</a>
+                    <a href="https://github.com/nihadhpa" target="_blank" class="btn-outline">GITHUB_VAULT</a>
+                </div>
+            </div>
+            
+            <div class="terminal-card p-8 rounded-lg w-full md:w-96 shadow-2xl">
+                <div class="flex gap-2 mb-6 border-b pb-4 border-dim">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <div class="text-[11px] space-y-4 font-mono">
+                    <p><span class="accent-text">$ whoami</span></p>
+                    <p class="pl-2">NIHADH_P_A // SEC_RESEARCHER</p>
+                    <p><span class="accent-text">$ domain --focus</span></p>
+                    <p class="pl-2 opacity-50">• SOC Operations & SIEM</p>
+                    <p class="pl-2 opacity-50">• Vulnerability Management</p>
+                    <p class="pl-2 opacity-50">• Offensive Security (CEH)</p>
+                    <p><span class="accent-text">$ certs --verify</span></p>
+                    <p class="pl-2 text-green-500">CEH_MASTER_AUTHENTICATED</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main-content" class="main-content">
-        <section class="about-section section-card">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">👨‍💻</span>
-                        About Me
-                    </h2>
-                    <div class="section-divider"></div>
+    <section id="projects" class="max-w-6xl mx-auto mb-24">
+        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter accent-border">Technical_Engagement_Reports</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="terminal-card p-6 rounded-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-bold text-lg accent-text">SIEM Monitoring & Detection</h3>
+                    <span class="text-[8px] border px-2 py-0.5 opacity-50 border-dim">DEFENSIVE</span>
                 </div>
-                <div class="about-content">
-                    <p class="intro-text">
-                        I'm a BCA final-year student passionate about building secure digital solutions. 
-                        My journey bridges offensive security testing with defensive strategies, while 
-                        developing full-stack applications with security-first principles.
-                    </p>
-                    <div class="current-focus">
-                        <p class="focus-label">Currently focusing on:</p>
-                        <ul class="focus-tags">
-                            <li>Web Application Security</li>
-                            <li>MERN Stack Development</li>
-                            <li>SOC Operations</li>
-                            <li>Cloud Security</li>
-                        </ul>
-                    </div>
+                <p class="opacity-60 text-sm mb-4 leading-relaxed">Configured Splunk dashboards to detect authentication anomalies and lateral movement patterns. Integrated YARA rules for automated file analysis.</p>
+                <div class="flex gap-2">
+                    <span class="tag">#Splunk</span>
+                    <span class="tag">#BlueTeam</span>
                 </div>
             </div>
-        </section>
-
-        <section class="expertise-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">🎯</span>
-                        Core Expertise
-                    </h2>
-                    <div class="section-divider"></div>
+            <div class="terminal-card p-6 rounded-lg">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-bold text-lg accent-text">Vulnerability Assessment</h3>
+                    <span class="text-[8px] border px-2 py-0.5 opacity-50 border-dim">OFFENSIVE</span>
                 </div>
-                
-                <div class="expertise-grid">
-                    <!-- Offensive Security Card -->
-                    <article class="expertise-card" data-type="offensive">
-                        <div class="card-icon offensive-icon">
-                            <div class="shield-icon">🛡️</div>
-                            <div class="sword-icon">⚔️</div>
-                        </div>
-                        <h3 class="card-title">Offensive Security</h3>
-                        <p class="card-desc">
-                            Proactive threat simulation and vulnerability assessment. 
-                            Specialized in web app penetration testing and Linux security.
-                        </p>
-                        <div class="metaphor-display">
-                            <div class="metaphor offensive-metaphor">
-                                <div class="attack-line"></div>
-                                <div class="target-dot"></div>
-                            </div>
-                        </div>
-                        <ul class="skill-tags">
-                            <li>Penetration Testing</li>
-                            <li>Vulnerability Assessment</li>
-                            <li>Red Teaming</li>
-                        </ul>
-                    </article>
-
-                    <!-- Defensive Security Card -->
-                    <article class="expertise-card" data-type="defensive">
-                        <div class="card-icon defensive-icon">
-                            <div class="wall-icon">🧱</div>
-                            <div class="radar-icon">📡</div>
-                        </div>
-                        <h3 class="card-title">Defensive Security</h3>
-                        <p class="card-desc">
-                            SOC operations, threat detection, and incident response. 
-                            Building resilient systems against cyber threats.
-                        </p>
-                        <div class="metaphor-display">
-                            <div class="metaphor defensive-metaphor">
-                                <div class="shield-layer"></div>
-                                <div class="protection-grid"></div>
-                            </div>
-                        </div>
-                        <ul class="skill-tags">
-                            <li>SOC Monitoring</li>
-                            <li>Incident Response</li>
-                            <li>Threat Hunting</li>
-                        </ul>
-                    </article>
-
-                    <!-- Full Stack Development Card -->
-                    <article class="expertise-card" data-type="fullstack">
-                        <div class="card-icon fullstack-icon">
-                            <div class="code-icon">{"<>"}</div>
-                            <div class="layer-icon">▦</div>
-                        </div>
-                        <h3 class="card-title">Full Stack Dev</h3>
-                        <p class="card-desc">
-                            Building secure, scalable web applications. 
-                            MERN stack expertise with focus on security best practices.
-                        </p>
-                        <div class="metaphor-display">
-                            <div class="metaphor fullstack-metaphor">
-                                <div class="stack-layer"></div>
-                                <div class="data-flow"></div>
-                            </div>
-                        </div>
-                        <ul class="skill-tags">
-                            <li>MERN Stack</li>
-                            <li>API Development</li>
-                            <li>Secure Coding</li>
-                        </ul>
-                    </article>
-
-                    <!-- Cloud & Networking Card -->
-                    <article class="expertise-card" data-type="cloud">
-                        <div class="card-icon cloud-icon">
-                            <div class="cloud-symbol">☁️</div>
-                            <div class="network-icon">▣</div>
-                        </div>
-                        <h3 class="card-title">Cloud & Networking</h3>
-                        <p class="card-desc">
-                            Infrastructure security, cloud deployment, and network defense. 
-                            Ensuring robust connectivity and data protection.
-                        </p>
-                        <div class="metaphor-display">
-                            <div class="metaphor cloud-metaphor">
-                                <div class="cloud-node"></div>
-                                <div class="connection-line"></div>
-                                <div class="cloud-node"></div>
-                            </div>
-                        </div>
-                        <ul class="skill-tags">
-                            <li>AWS/Azure Basics</li>
-                            <li>Network Security</li>
-                            <li>Infrastructure</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects-section section-card">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">🚀</span>
-                        Current Projects
-                    </h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="projects-content">
-                    <div class="project-status">
-                        <div class="status-construction">
-                            <div class="construction-icon">🏗️</div>
-                            <h3 class="status-title">Portfolio Under Construction</h3>
-                            <p class="status-desc">
-                                I'm currently working on some exciting projects that demonstrate 
-                                both security testing tools and full-stack applications. 
-                                Check back soon for case studies and live demos!
-                            </p>
-                            <div class="progress-indicator">
-                                <div class="progress-bar">
-                                    <div class="progress-fill"></div>
-                                </div>
-                                <span class="progress-text">Updating projects this week</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="certifications-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">🏆</span>
-                        Certifications
-                    </h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="certs-grid">
-                    <div class="cert-card cert-ceh">
-                        <div class="cert-badge">CEH</div>
-                        <h3 class="cert-name">Certified Ethical Hacker Master</h3>
-                        <p class="cert-desc">Advanced penetration testing and ethical hacking</p>
-                    </div>
-                    <div class="cert-card cert-cyberdef">
-                        <div class="cert-badge">CD</div>
-                        <h3 class="cert-name">Advanced Cyber Defense</h3>
-                        <p class="cert-desc">SOC operations and threat intelligence</p>
-                    </div>
-                    <div class="cert-card cert-fullstack">
-                        <div class="cert-badge">FS</div>
-                        <h3 class="cert-name">Full Stack Development</h3>
-                        <p class="cert-desc">MERN stack with security focus</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section section-card">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-icon">📬</span>
-                        Get In Touch
-                    </h2>
-                    <div class="section-divider"></div>
-                </div>
-                <div class="contact-content">
-                    <p class="contact-intro">
-                        I'm actively seeking cybersecurity internships and collaboration opportunities. 
-                        Let's discuss how we can work together to build secure digital solutions.
-                    </p>
-                    
-                    <div class="contact-methods">
-                        <a href="https://github.com/YOURUSERNAME" 
-                           class="contact-link github-link"
-                           target="_blank" 
-                           rel="noopener noreferrer">
-                            <span class="link-icon">🐙</span>
-                            <span class="link-text">github.com/YOURUSERNAME</span>
-                            <span class="link-arrow">↗</span>
-                        </a>
-                        
-                        <a href="mailto:your.email@example.com" 
-                           class="contact-link email-link">
-                            <span class="link-icon">✉️</span>
-                            <span class="link-text">your.email@example.com</span>
-                            <span class="link-arrow">↗</span>
-                        </a>
-                        
-                        <div class="contact-link linkedin-link">
-                            <span class="link-icon">💼</span>
-                            <span class="link-text">LinkedIn (coming soon)</span>
-                            <div class="coming-soon-badge">Soon</div>
-                        </div>
-                    </div>
-                    
-                    <div class="availability">
-                        <p class="available-text">
-                            <span class="available-dot"></span>
-                            Available for internships starting immediately
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-copyright">
-                    <p>&copy; <span id="currentYear">2025</span> Your Name. All rights reserved.</p>
-                    <p class="footer-note">Built with security in mind. Last updated: <span id="lastUpdated">January 2025</span></p>
-                </div>
-                <div class="footer-links">
-                    <a href="#" class="footer-link" onclick="scrollToTop()">Back to top ↑</a>
-                    <span class="footer-separator">•</span>
-                    <span class="footer-tech">HTML5 | CSS3 | Vanilla JS</span>
+                <p class="opacity-60 text-sm mb-4 leading-relaxed">Identified and documented critical flaws in web applications using CEH Master methodologies, focusing on injection points and privilege escalation.</p>
+                <div class="flex gap-2">
+                    <span class="tag">#Pentesting</span>
+                    <span class="tag">#CEH_Master</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="logs" class="max-w-6xl mx-auto mb-24">
+        <h2 class="text-2xl font-bold mb-10 border-l-4 pl-4 uppercase tracking-tighter accent-border">Activity_Log_Stream</h2>
+        <div class="terminal-card p-6 rounded-lg mb-6">
+            <div class="grid md:grid-cols-4 gap-4">
+                <input type="text" id="logTitle" placeholder="NODE_ID (Lab/Target)" class="log-input">
+                <input type="text" id="logDesc" placeholder="ACTION_SUMMARY" class="md:col-span-2 log-input">
+                <button onclick="addLog()" class="btn-append">Append_Log</button>
+            </div>
+        </div>
+        <div id="logsContainer" class="space-y-3"></div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto mb-24 pt-16 border-t border-dim">
+        <div class="grid md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 italic">Let's Secure Something Together</h2>
+                <p class="opacity-60 mb-10 text-sm leading-loose">
+                    I am actively seeking <span class="accent-text font-bold">SOC Analyst</span> or <span class="accent-text font-bold">Cybersecurity Researcher</span> roles. Available for immediate joining.
+                </p>
+                <div class="space-y-4 text-xs font-mono">
+                    <p><i class="fas fa-envelope mr-3 accent-text"></i> nihadhpaofficial@gmail.com</p>
+                    <p><i class="fab fa-linkedin mr-3 accent-text"></i> linkedin.com/in/nihad-p-a</p>
+                    <p class="text-green-500"><i class="fas fa-check-circle mr-3"></i> STATUS: OPEN_TO_RELOCATION</p>
+                </div>
+            </div>
+            <div class="terminal-card p-8 rounded-lg">
+                <form action="https://formspree.io/f/mdayonwz" method="POST" class="space-y-4">
+                    <input type="text" name="name" placeholder="IDENT_NAME" required class="log-input w-full">
+                    <input type="email" name="email" placeholder="AUTH_EMAIL" required class="log-input w-full">
+                    <textarea name="message" rows="4" placeholder="TRANSMISSION_PAYLOAD" required class="log-input w-full"></textarea>
+                    <button type="submit" class="btn-primary w-full py-4 uppercase">TRANSMIT_SIGNAL</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto text-center py-12 border-t border-dim">
+        <p class="opacity-30 text-[10px] tracking-[0.5em] font-bold uppercase">Nihadh P A // Secure_Ops // 2026</p>
     </footer>
 
     <script src="script.js"></script>
